@@ -11,7 +11,7 @@ cd $path
 #cd $path
 
 filesToProcess() {
-  local listFile=$path/openssl_files
+  local listFile=$path/casestudy/openssl_files
   cat $listFile
 # cat $listFile | sed -n "${1}~8p" 
 }
@@ -21,7 +21,7 @@ echo "Generating interface"
 flags=" --bdd \
   	--study openssl --reuseAST --refPrep --refLink $path/CLinking.interface \
         -I $path/openssl \
-	 -I $path/openssl/include
+	-I $path/openssl/include
 	-I $path/openssl/include/openssl
 	--platfromHeader $path/openssl/platform.h \
         --featureModelDimacs $path/openssl/OpenSSL.dimacs \
