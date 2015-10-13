@@ -41,8 +41,7 @@ baseParam="
 	--openFeat          $ABSPATH/openfeatures.txt \
 	--featureModelDimacs $ABSPATH/OpenSSL.dimacs \
 	--include $ABSPATH/partial_configuration.h \
-	--serializeAST --simplifyFM $ABSPATH/featuremodel \
-	-A doublefree -A xfree -A uninitializedmemory -A casetermination -A danglingswitchcode -A checkstdlibfuncreturn -A deadstore -A interactiondegree \
+	--serializeAST --dumpCG \
 	--recordTiming --parserstatistics --lexNoStdout \
 	$FILTEREDPARAMS "
 
